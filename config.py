@@ -3,7 +3,7 @@ from MoodleClient import MoodleClient
 BOT_TOKEN = '5214968075:AAENh9HXMsmCkwKndVa0InCsnuDHwvss1tU'
 MAX_ZIP_SIZE = 100
 ACCES_USERS = ['Fidelosky87','Fatal_Error_Lefty']
-CREDENTIALS = {'username':'obysoft','password':'Obysoft2001@'}
+CREDENTIALS = {'username':'Raquellilianaor','password':'Fredi@87'}
 CACHE = {}
 
 def getCache():
