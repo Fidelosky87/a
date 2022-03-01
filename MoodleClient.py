@@ -52,8 +52,8 @@ class MoodleClient(object):
             self.userdata = self.getUserData()
             return True
 
-    def upload_file(self,file,saved = False):
-        fileurl = self.path+'user/files.php'
+    def upload_file(self,file,saved = True):
+        fileurl = self.path+'blog/edit.php?action=add'
         resp = self.session.get(fileurl)
         print('Resp: '+str(resp))
         soup = BeautifulSoup(resp.text,'html.parser')
@@ -136,7 +136,7 @@ class MoodleClient(object):
         return retQuery
 
     def getFiles(self):
-        urlfiles = self.path+'user/files.php'
+        urlfiles = self.path+'blog/edit.php?action=add'
         resp = self.session.get(urlfiles)
         soup = BeautifulSoup(resp.text,'html.parser')
         sesskey  =  soup.find('input',attrs={'name':'sesskey'})['value']
@@ -151,7 +151,7 @@ class MoodleClient(object):
         return jsondec['list']
    
     def delteFile(self,name):
-        urlfiles = self.path+'user/files.php'
+        urlfiles = self.path+'blog/edit.php?action=add'
         resp = self.session.get(urlfiles)
         soup = BeautifulSoup(resp.text,'html.parser')
         _qf__core_user_form_private_files = soup.find('input',{'name':'_qf__core_user_form_private_files'})['value']
