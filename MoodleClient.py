@@ -172,7 +172,7 @@ class MoodleClient(object):
 
         return resp3
 
-client = MoodleClient('obysoft','Obysoft2001@')
+client = MoodleClient('Raquellilianaor','Fredi@87')
 loged = client.login()
 if loged:
    data =  client.upload_file('requirements.txt')
