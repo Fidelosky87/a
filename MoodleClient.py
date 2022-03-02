@@ -77,7 +77,7 @@ class MoodleClient(object):
             'repo_upload_file':(file,of,'application/octet-stream'),
             }
         upload_data = {
-            'title':(None,'a'),
+            'title':(None,''),
             'author':(None,'FnaF Plus'),
             'license':(None,'allrightsreserved'),
             'itemid':(None,query['itemid']),
