@@ -11,7 +11,7 @@ class MoodleClient(object):
         self.username = user
         self.password = passw
         self.session = requests.Session()
-        self.path = 'https://aulavirtual.upec.cu/'
+        self.path = 'https://cursos.ucf.edu.cu/'
         self.userdata = ''
 
     def getsession(self):
