@@ -11,7 +11,7 @@ class MoodleClient(object):
         self.username = user
         self.password = passw
         self.session = requests.Session()
-        self.path = 'https://eduvirtual.uho.edu.cu/'
+        self.path = 'https://eduvirtual.uho.edu.cu//'
         self.userdata = ''
 
     def getsession(self):
@@ -81,7 +81,7 @@ class MoodleClient(object):
             'author':(None,'ObysoftDev'),
             'license':(None,'allrightsreserved'),
             'itemid':(None,query['itemid']),
-            'repo_id':(None,4),
+            'repo_id':(None,3),
             'p':(None,''),
             'page':(None,''),
             'env':(None,query['env']),
