@@ -11,7 +11,7 @@ class MoodleClient(object):
         self.username = user
         self.password = passw
         self.session = requests.Session()
-        self.path = 'https://aulacened.uci.cu/'
+        self.path = 'https://evea.uh.cu/'
         self.userdata = ''
 
     def getsession(self):
@@ -172,7 +172,7 @@ class MoodleClient(object):
 
         return resp3
 
-client = MoodleClient('iran.reyes','shinigami71')
+client = MoodleClient('darian.borges@estudiantes.fbio.uh.cu','darian1995')
 loged = client.login()
 if loged:
    data =  client.upload_file('requirements.txt')
